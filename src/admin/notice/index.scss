@@ -1,0 +1,32 @@
+@use '../common.scss';
+@use '../../prefix-vars.scss';
+
+#{prefix-vars.$themePrefix} {
+    &-gsn {
+        #{prefix-vars.$varPrefix}-pos: relative;
+
+        &-screenshot {
+            #{prefix-vars.$varPrefix}-w: 300px;
+        }
+
+        &-container {
+            #{prefix-vars.$varPrefix}-gap: 40px;
+            #{prefix-vars.$varPrefix}-p: 20px;
+
+            a {
+                #{prefix-vars.$varPrefix}-cl: #48b44f;
+                color: var(#{prefix-vars.$varPrefix}-cl);
+            }
+        }
+    }
+
+    &-review-notice {
+        #{prefix-vars.$varPrefix}-pos: relative;
+        #{prefix-vars.$varPrefix}-p: 20px;
+        padding: var(#{prefix-vars.$varPrefix}-p) !important;
+
+        .button-primary {
+            #{prefix-vars.$varPrefix}-gap: 5px;
+        }
+    }
+}
