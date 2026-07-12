@@ -10,9 +10,10 @@
  * @package Babita_Business_Theme
  */
 ?>
-<!-- wp:cover {"dimRatio":60,"overlayColor":"quaternary","minHeight":90,"minHeightUnit":"vh","isDark":true,"align":"full","layout":{"type":"constrained"}} -->
+<!-- wp:cover {"url":"<?php echo esc_url( get_theme_file_uri( 'assets/img/hero-banner.jpg' ) ); ?>","dimRatio":60,"overlayColor":"quaternary","minHeight":90,"minHeightUnit":"vh","isDark":true,"align":"full","layout":{"type":"constrained"}} -->
 <div class="wp-block-cover alignfull" style="min-height:90vh">
 <span aria-hidden="true" class="wp-block-cover__background has-quaternary-background-color has-background-dim-60 has-background-dim"></span>
+<img class="wp-block-cover__image-background" src="<?php echo esc_url( get_theme_file_uri( 'assets/img/hero-banner.jpg' ) ); ?>" alt="La Vie Boutique hero background" style="object-fit:cover; object-position: top;"/>
 <div class="wp-block-cover__inner-container">
 
     <!-- wp:spacer {"height":"60px"} -->
